@@ -1,0 +1,30 @@
+var box; 
+var surface1;
+var surface2 ;
+var surface3 ;
+var surface4;
+
+function setup(){
+ball = createSprite(200,200,20,20);
+ surface1 = createSprite(400,70,5,20);
+ surface2 = createSprite(400,120,5,20);
+ surface3 = createSprite(400,170,5,20);
+ surface4 = createSprite(400,220,5,20);
+
+
+
+
+}
+
+function draw(){
+if(surface1.isTouching(box) && box.bounceOff(surface1)||surface1.isTouching(box) && box.shapeColor("red")){
+
+
+}
+surface1.shapeColor("red");
+surface2.shapeColor("blue");
+surface3.shapeColor("yellow");
+surface4.shapeColor("green");
+
+drawSprites();
+}
